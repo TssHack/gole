@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 min-h-screen;
+  }
+}
+
+@layer components {
+  .markdown-body h1 {
+    @apply text-2xl font-bold mb-4;
+  }
+
+  .markdown-body h2 {
+    @apply text-xl font-bold mb-3;
+  }
+
+  .markdown-body h3 {
+    @apply text-lg font-bold mb-2;
+  }
+
+  .markdown-body p {
+    @apply mb-4;
+  }
+
+  .markdown-body ul {
+    @apply list-disc list-inside mb-4;
+  }
+
+  .markdown-body ol {
+    @apply list-decimal list-inside mb-4;
+  }
+
+  .markdown-body code {
+    @apply px-1 py-0.5 bg-gray-100 rounded text-sm font-mono;
+  }
+
+  .markdown-body pre {
+    @apply p-4 bg-gray-800 rounded-lg overflow-x-auto mb-4;
+  }
+
+  .markdown-body pre code {
+    @apply bg-transparent p-0 text-white;
+  }
+
+  .markdown-body blockquote {
+    @apply pl-4 border-l-4 border-gray-200 italic;
+  }
+
+  .markdown-body a {
+    @apply text-indigo-600 hover:text-indigo-700 underline;
+  }
+
+  .markdown-body table {
+    @apply w-full border-collapse mb-4;
+  }
+
+  .markdown-body th,
+  .markdown-body td {
+    @apply border border-gray-300 px-4 py-2;
+  }
+
+  .markdown-body th {
+    @apply bg-gray-50;
+  }
+} 
